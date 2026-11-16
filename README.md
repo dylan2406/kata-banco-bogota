@@ -125,31 +125,3 @@ PATCH /api/practicantes/1/estado
 ```
 
 Estados válidos: `PENDIENTE`, `VIABLE`, `NO_VIABLE`
-
-## Pruebas
-
-```powershell
-cd c:\Kata_banco_bogota\backend
-venv\Scripts\python -m pytest tests/ -v
-```
-
-Resultado esperado: **15 passed**
-
-## Guion de demostración (7 minutos)
-
-| Tiempo | Acción |
-|--------|--------|
-| 0:00 | Mostrar estructura del proyecto y arquitectura |
-| 0:45 | Iniciar Flask (`python run.py`) — mostrar consola |
-| 1:15 | Iniciar frontend (`python -m http.server 8080`) |
-| 1:30 | Abrir `http://localhost:8080` — mostrar formulario |
-| 2:00 | Demostrar validaciones: campos vacíos, correo inválido, semestre negativo |
-| 2:45 | Registrar practicante real con PDF |
-| 3:15 | Navegar al Panel de Analistas — ver tabla con datos reales |
-| 3:45 | Abrir detalle del practicante |
-| 4:15 | Cambiar estado a VIABLE — mostrar actualización sin recarga |
-| 4:45 | Cambiar estado a NO VIABLE |
-| 5:15 | Descargar hoja de vida PDF |
-| 5:45 | Ejecutar pruebas: `pytest tests/ -v` — 15 passed |
-| 6:30 | Mostrar base de datos SQLite con datos persistidos |
-| 7:00 | Cierre |
