@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Analistas — Plataforma de Selección</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/analistas.css" />
+</head>
+<body style="visibility:hidden">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="../assets/logo-banco.png" alt="Banco Bogotá" class="navbar-logo" />
+    </div>
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a href="analistas.html" class="active">Panel Analistas</a>
+      <span id="nav-usuario" style="color:rgba(255,255,255,0.7);font-size:0.88rem"></span>
+    </div>
+    <div class="navbar-cta">
+      <button id="btn-logout" class="btn btn-sm" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.3)">Cerrar sesión</button>
+    </div>
+  </nav>
+
+  <div class="container-wide" style="margin-top:100px">
+    <div class="page-header">
+      <h1>Panel de Analistas</h1>
+      <button id="btn-refresh" class="btn btn-secondary btn-sm">↻ Actualizar</button>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-num" id="stat-total">—</div>
+        <div class="stat-label">Total</div>
+      </div>
+      <div class="stat-card pendiente">
+        <div class="stat-num" id="stat-pendiente">—</div>
+        <div class="stat-label">Pendientes</div>
+      </div>
+      <div class="stat-card viable">
+        <div class="stat-num" id="stat-viable">—</div>
+        <div class="stat-label">Viables</div>
+      </div>
+      <div class="stat-card no-viable">
+        <div class="stat-num" id="stat-no-viable">—</div>
+        <div class="stat-label">No Viables</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="toolbar">
+        <input type="text" id="search" class="form-control" placeholder="Buscar por nombre, correo o carrera…" />
+      </div>
+
+      <div id="alert-msg" class="alert"></div>
+
+      <div id="state-loading" class="state-loading">
+        <div class="spinner"></div>
+        <p>Cargando practicantes…</p>
+      </div>
+      <div id="state-empty" class="state-empty" style="display:none">
+        <p>📋 No hay practicantes registrados aún.</p>
+        <a href="../index.html" class="btn btn-primary" style="margin-top:1rem">Registrar primer practicante</a>
+      </div>
+      <div id="state-error" class="state-error" style="display:none">
+        <p>⚠️ No se pudo cargar la lista. Verifica que Flask esté en ejecución.</p>
+        <button id="btn-retry" class="btn btn-secondary" style="margin-top:1rem" onclick="location.reload()">Reintentar</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre completo</th>
+              <th>Correo</th>
+              <th>Carrera</th>
+              <th>Semestre</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body" style="display:none"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/analistas.js"></script>
+</body>
+</html>

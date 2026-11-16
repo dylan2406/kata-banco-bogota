@@ -1,0 +1,62 @@
+/* registro-general.css */
+.rg-wrapper { max-width: 480px; }
+
+.rg-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+}
+.rg-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+.rg-tab:hover { color: var(--primary); }
+.rg-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+.rg-panel { animation: fadeIn 0.2s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Password strength */
+.pwd-strength { margin-top: 0.5rem; }
+.pwd-bar {
+  height: 6px;
+  background: var(--gray-200);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+.pwd-bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 3px;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+.pwd-strength-weak   .pwd-bar-fill { width: 25%; background: var(--danger); }
+.pwd-strength-fair   .pwd-bar-fill { width: 50%; background: var(--warning); }
+.pwd-strength-good   .pwd-bar-fill { width: 75%; background: #f0a500; }
+.pwd-strength-strong .pwd-bar-fill { width: 100%; background: var(--success); }
+#pwd-strength-label { font-size: 0.8rem; font-weight: 600; }
+
+.pwd-rules {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem 1rem;
+}
+.pwd-rules li {
+  font-size: 0.8rem;
+  color: var(--danger);
+  transition: color 0.2s;
+}
+.pwd-rules li.ok { color: var(--success); }

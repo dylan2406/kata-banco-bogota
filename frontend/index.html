@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Bogotá — Programa de Practicantes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="assets/logo-banco.png" alt="Banco Bogotá" class="navbar-logo" />
+    </div>
+    <div class="navbar-links" id="navbar-links">
+      <a href="#beneficios">Beneficios</a>
+      <a href="#por-que">¿Por qué nosotros?</a>
+      <a href="#areas">Áreas</a>
+      <a href="#postulate">Postúlate</a>
+      <a href="pages/registro-general.html" class="btn-accent-mobile">Acceso Analistas</a>
+    </div>
+    <div class="navbar-cta">
+      <a href="pages/registro-general.html" class="btn btn-accent btn-sm">Acceso Analistas</a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Menú">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Convocatoria abierta 2026</div>
+      <h1>Inicia tu carrera profesional<br>con el <span>Banco Bogotá</span></h1>
+      <p>Únete a nuestro programa de prácticas y transforma tu futuro. Aprende de los mejores, trabaja en proyectos reales y construye la experiencia que el mercado exige.</p>
+      <div class="hero-actions">
+        <a href="#postulate" class="btn btn-accent">Postularme ahora</a>
+        <a href="#beneficios" class="btn btn-outline">Conocer más</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-cards-track">
+        <!-- original -->
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="trending-up"></i></div>
+          <div><strong>+500 practicantes</strong><span>vinculados en 2025</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="graduation-cap"></i></div>
+          <div><strong>85% de absorción</strong><span>al finalizar prácticas</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="star"></i></div>
+          <div><strong>#1 Banco</strong><span>para iniciar carrera</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="award"></i></div>
+          <div><strong>Top empleador</strong><span>universitario 2025</span></div>
+        </div>
+        <!-- duplicado para loop infinito -->
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="trending-up"></i></div>
+          <div><strong>+500 practicantes</strong><span>vinculados en 2025</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="graduation-cap"></i></div>
+          <div><strong>85% de absorción</strong><span>al finalizar prácticas</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="star"></i></div>
+          <div><strong>#1 Banco</strong><span>para iniciar carrera</span></div>
+        </div>
+        <div class="hero-card-float">
+          <div class="hc-icon"><i data-lucide="award"></i></div>
+          <div><strong>Top empleador</strong><span>universitario 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2>Beneficios del programa</h2>
+        <p>Todo lo que necesitas para crecer profesionalmente</p>
+      </div>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8592;</button>
+        <div class="carousel-track-outer">
+          <div class="carousel-track" id="benefits-track">
+            <div class="benefit-card">
+              <div class="benefit-icon anim-bounce"><i data-lucide="banknote"></i></div>
+              <h3>Auxilio económico</h3>
+              <p>Apoyo mensual competitivo acorde al nivel de estudios y área de práctica.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon anim-pulse"><i data-lucide="heart-pulse"></i></div>
+              <h3>Seguridad social</h3>
+              <p>Afiliación completa a salud y ARL durante toda la duración de las prácticas.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon anim-float"><i data-lucide="book-open"></i></div>
+              <h3>Formación continua</h3>
+              <p>Acceso a plataformas de e-learning, talleres internos y certificaciones bancarias.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon anim-float"><i data-lucide="users"></i></div>
+              <h3>Mentoría personalizada</h3>
+              <p>Un profesional senior te acompañará durante todo tu proceso de aprendizaje.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon anim-bounce"><i data-lucide="network"></i></div>
+              <h3>Red de contactos</h3>
+              <p>Conecta con más de 5.000 colaboradores y construye tu red profesional.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon anim-float"><i data-lucide="rocket"></i></div>
+              <h3>Posibilidad de vinculación</h3>
+              <p>Los mejores practicantes reciben oferta de empleo al finalizar su período.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8594;</button>
+      </div>
+      <div class="carousel-dots" id="benefits-dots"></div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ NOSOTROS -->
+  <section class="section section-alt" id="por-que">
+    <div class="container">
+      <div class="why-box">
+        <div class="section-header">
+          <h2>¿Por qué el Banco Bogotá?</h2>
+          <p>Más de 70 años siendo el banco de los colombianos</p>
+        </div>
+        <div class="why-grid">
+        <div class="why-stat">
+          <span class="why-num">70+</span>
+          <span class="why-label">Años de historia</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-num">800+</span>
+          <span class="why-label">Oficinas en Colombia</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-num">12K+</span>
+          <span class="why-label">Colaboradores</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-num">4M+</span>
+          <span class="why-label">Clientes activos</span>
+        </div>
+      </div>
+      <div class="why-features">
+        <div class="why-feature">
+          <span class="wf-check">✓</span>
+          <div>
+            <strong>Ambiente diverso e inclusivo</strong>
+            <p>Creemos en el talento sin importar el origen. Promovemos la equidad de género y la diversidad en todos nuestros equipos.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <span class="wf-check">✓</span>
+          <div>
+            <strong>Innovación y tecnología</strong>
+            <p>Trabajamos con las últimas tecnologías financieras. Nuestros practicantes participan en proyectos de transformación digital real.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <span class="wf-check">✓</span>
+          <div>
+            <strong>Impacto social</strong>
+            <p>Contribuye a la inclusión financiera de millones de colombianos. Tu trabajo tiene un propósito que va más allá del negocio.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <span class="wf-check">✓</span>
+          <div>
+            <strong>Flexibilidad y bienestar</strong>
+            <p>Modalidad híbrida, horarios flexibles y programas de bienestar para que rindas al máximo sin sacrificar tu calidad de vida.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREAS -->
+  <section class="section" id="areas">
+    <div class="container">
+      <div class="section-header">
+        <h2>Áreas disponibles</h2>
+        <p>Encuentra el área que se alinea con tu perfil</p>
+      </div>
+      <div class="areas-grid">
+        <div class="area-tag"><i data-lucide="cpu"></i> Tecnología e Innovación</div>
+        <div class="area-tag"><i data-lucide="bar-chart-2"></i> Riesgo y Finanzas</div>
+        <div class="area-tag"><i data-lucide="landmark"></i> Banca Corporativa</div>
+        <div class="area-tag"><i data-lucide="smartphone"></i> Banca Digital</div>
+        <div class="area-tag"><i data-lucide="scale"></i> Jurídica y Cumplimiento</div>
+        <div class="area-tag"><i data-lucide="megaphone"></i> Marketing y Comunicaciones</div>
+        <div class="area-tag"><i data-lucide="users"></i> Gestión Humana</div>
+        <div class="area-tag"><i data-lucide="shield"></i> Ciberseguridad</div>
+        <div class="area-tag"><i data-lucide="package"></i> Operaciones</div>
+        <div class="area-tag"><i data-lucide="leaf"></i> Sostenibilidad</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE POSTULACIÓN -->
+  <section class="section section-alt" id="postulate">
+    <div class="container">
+      <div class="section-header">
+        <h2>¡Postúlate ahora!</h2>
+        <p>Completa el formulario y da el primer paso hacia tu futuro profesional</p>
+      </div>
+
+      <div class="card form-card">
+        <div id="alert-success" class="alert alert-success"></div>
+        <div id="alert-error" class="alert alert-error"></div>
+
+        <form id="form-registro" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="primer_nombre">Primer nombre <span class="required">*</span></label>
+              <input type="text" id="primer_nombre" name="primer_nombre" class="form-control"
+                placeholder="Ej: María" autocomplete="given-name" />
+              <span id="err_primer_nombre" class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="segundo_nombre">Segundo nombre <span style="color:var(--gray-600);font-weight:400">(opcional)</span></label>
+              <input type="text" id="segundo_nombre" name="segundo_nombre" class="form-control"
+                placeholder="Ej: Alejandra" autocomplete="additional-name" />
+              <span id="err_segundo_nombre" class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="primer_apellido">Primer apellido <span class="required">*</span></label>
+              <input type="text" id="primer_apellido" name="primer_apellido" class="form-control"
+                placeholder="Ej: García" autocomplete="family-name" />
+              <span id="err_primer_apellido" class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="segundo_apellido">Segundo apellido <span class="required">*</span></label>
+              <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-control"
+                placeholder="Ej: López" />
+              <span id="err_segundo_apellido" class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correo_electronico">Correo electrónico <span class="required">*</span></label>
+              <input type="email" id="correo_electronico" name="correo_electronico" class="form-control"
+                placeholder="correo@universidad.edu.co" autocomplete="email" />
+              <span id="err_correo" class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="semestre_actual">Semestre actual <span class="required">*</span></label>
+              <input type="number" id="semestre_actual" name="semestre_actual" class="form-control"
+                placeholder="Ej: 7" min="1" max="12" />
+              <span id="err_semestre" class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="carrera_search">Carrera universitaria <span class="required">*</span></label>
+            <div class="carrera-combo" id="carrera-combo">
+              <input type="text" id="carrera_search" class="form-control" autocomplete="off"
+                placeholder="Busca o selecciona tu carrera…" />
+              <ul id="carrera-lista" class="carrera-dropdown" role="listbox"></ul>
+            </div>
+            <input type="hidden" id="carrera_universitaria" name="carrera_universitaria" />
+            <span id="err_carrera" class="field-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Hoja de vida (PDF) <span class="required">*</span></label>
+            <label class="file-label" for="hoja_vida">
+              <i data-lucide="paperclip"></i> <span id="file-label-text">Seleccionar archivo PDF</span>
+            </label>
+            <input type="file" id="hoja_vida" name="hoja_vida" accept=".pdf,application/pdf" />
+            <span id="err_hoja_vida" class="field-error"></span>
+            <small style="color:var(--gray-600);font-size:0.8rem;margin-top:0.3rem;display:block;">Máximo 5 MB · Solo archivos PDF</small>
+          </div>
+
+          <div class="submit-area">
+            <button type="submit" id="btn-submit" class="btn btn-primary">Enviar postulación</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="assets/logo-banco.png" alt="Banco Bogotá" class="footer-logo" />
+          <p>Programa de Practicantes 2026</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+          <a href="pages/registro-general.html">Acceso analistas</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Banco Bogotá. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/registro.js"></script>
+  <script>lucide.createIcons();</script>
+  <script>
+    // Hamburguesa
+    const hamburger = document.getElementById('navbar-hamburger');
+    const navLinks = document.getElementById('navbar-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Scroll reveal postulate
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 }).observe(document.getElementById('postulate'));
+  </script>
+  <script>
+    (function () {
+      const navbar = document.querySelector('.navbar');
+      let lastY = 0;
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const y = window.scrollY;
+            if (y > lastY && y > 80) {
+              navbar.classList.add('nav-hidden');
+            } else if (y < lastY - 8) {
+              navbar.classList.remove('nav-hidden');
+            }
+            lastY = y;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      const track = document.getElementById('benefits-track');
+      const dotsContainer = document.getElementById('benefits-dots');
+      const cards = track.querySelectorAll('.benefit-card');
+      let current = 0;
+
+      function visibleCount() {
+        return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3;
+      }
+
+      function totalSlides() {
+        return cards.length - visibleCount() + 1;
+      }
+
+      function buildDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides(); i++) {
+          const d = document.createElement('button');
+          d.className = 'carousel-dot' + (i === current ? ' active' : '');
+          d.addEventListener('click', () => goTo(i));
+          dotsContainer.appendChild(d);
+        }
+      }
+
+      function goTo(index) {
+        current = Math.max(0, Math.min(index, totalSlides() - 1));
+        const cardWidth = cards[0].offsetWidth + 24;
+        track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
+        dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) =>
+          d.classList.toggle('active', i === current)
+        );
+      }
+
+      document.querySelector('.carousel-prev').addEventListener('click', () => goTo(current - 1));
+      document.querySelector('.carousel-next').addEventListener('click', () => goTo(current + 1));
+
+      window.addEventListener('resize', () => { current = 0; buildDots(); goTo(0); });
+
+      buildDots();
+    })();
+  </script>
+</body>
+</html>

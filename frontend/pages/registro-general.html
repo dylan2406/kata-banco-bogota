@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso Analistas — Banco Bogotá</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/registro-general.css" />
+</head>
+<body class="login-body" style="visibility:hidden">
+  <div class="login-wrapper rg-wrapper">
+    <div class="login-card card">
+
+      <div class="login-header">
+        <div class="login-icon">🏦</div>
+        <h1>Banco Bogotá</h1>
+        <p>Portal de analistas — Selección de practicantes</p>
+      </div>
+
+      <!-- TABS -->
+      <div class="rg-tabs">
+        <button class="rg-tab active" data-tab="login">Iniciar sesión</button>
+        <button class="rg-tab" data-tab="registro">Registrar analista</button>
+      </div>
+
+      <!-- TAB: LOGIN -->
+      <div id="tab-login" class="rg-panel">
+        <div id="alert-login-error" class="alert alert-error"></div>
+        <div id="alert-login-success" class="alert alert-success"></div>
+        <form id="form-login" novalidate>
+          <div class="form-group">
+            <label for="login-username">Usuario <span class="required">*</span></label>
+            <input type="text" id="login-username" class="form-control"
+              placeholder="Ingresa tu usuario" autocomplete="username" />
+            <span id="err-login-username" class="field-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Contraseña <span class="required">*</span></label>
+            <div class="password-wrapper">
+              <input type="password" id="login-password" class="form-control"
+                placeholder="Ingresa tu contraseña" autocomplete="current-password" />
+              <button type="button" class="btn-eye" data-target="login-password">👁</button>
+            </div>
+            <span id="err-login-password" class="field-error"></span>
+          </div>
+          <button type="submit" id="btn-login" class="btn btn-primary" style="width:100%;margin-top:0.5rem">
+            Iniciar sesión
+          </button>
+        </form>
+      </div>
+
+      <!-- TAB: REGISTRO ANALISTA -->
+      <div id="tab-registro" class="rg-panel" style="display:none">
+        <div id="alert-reg-error" class="alert alert-error"></div>
+        <div id="alert-reg-success" class="alert alert-success"></div>
+        <form id="form-registro-analista" novalidate>
+          <div class="form-group">
+            <label for="reg-nombre">Nombre completo <span class="required">*</span></label>
+            <input type="text" id="reg-nombre" class="form-control"
+              placeholder="Ej: Carlos Rodríguez" autocomplete="name" />
+            <span id="err-reg-nombre" class="field-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-username">Usuario <span class="required">*</span></label>
+            <input type="text" id="reg-username" class="form-control"
+              placeholder="Ej: crodriguez" autocomplete="off" />
+            <span id="err-reg-username" class="field-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-correo">Correo electrónico <span class="required">*</span></label>
+            <input type="email" id="reg-correo" class="form-control"
+              placeholder="analista@bancobogota.com.co" autocomplete="email" />
+            <span id="err-reg-correo" class="field-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Contraseña <span class="required">*</span></label>
+            <div class="password-wrapper">
+              <input type="password" id="reg-password" class="form-control"
+                placeholder="Mín. 8 car., mayúscula, número, símbolo" autocomplete="new-password" />
+              <button type="button" class="btn-eye" data-target="reg-password">👁</button>
+            </div>
+            <div id="password-strength" class="pwd-strength" style="display:none">
+              <div class="pwd-bar"><div id="pwd-bar-fill" class="pwd-bar-fill"></div></div>
+              <span id="pwd-strength-label"></span>
+            </div>
+            <ul id="pwd-rules" class="pwd-rules">
+              <li id="rule-len">✕ Mínimo 8 caracteres</li>
+              <li id="rule-upper">✕ Al menos una mayúscula (A-Z)</li>
+              <li id="rule-lower">✕ Al menos una minúscula (a-z)</li>
+              <li id="rule-num">✕ Al menos un número (0-9)</li>
+              <li id="rule-special">✕ Al menos un carácter especial (!@#$%...)</li>
+            </ul>
+            <span id="err-reg-password" class="field-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-password2">Confirmar contraseña <span class="required">*</span></label>
+            <div class="password-wrapper">
+              <input type="password" id="reg-password2" class="form-control"
+                placeholder="Repite la contraseña" autocomplete="new-password" />
+              <button type="button" class="btn-eye" data-target="reg-password2">👁</button>
+            </div>
+            <span id="err-reg-password2" class="field-error"></span>
+          </div>
+          <button type="submit" id="btn-registrar" class="btn btn-primary" style="width:100%;margin-top:0.5rem">
+            Crear cuenta de analista
+          </button>
+        </form>
+      </div>
+
+      <div class="login-hint">
+        <small><a href="../index.html">← Volver al inicio</a></small>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/registro-general.js"></script>
+</body>
+</html>

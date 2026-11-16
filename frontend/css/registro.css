@@ -1,0 +1,19 @@
+/* registro.css — estilos específicos del formulario de registro */
+.registro-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.registro-hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.registro-hero p { opacity: 0.85; font-size: 1rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+.submit-area { margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }

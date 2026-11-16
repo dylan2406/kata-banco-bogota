@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Base de datos y archivos subidos
+backend/instance/
+backend/storage/cvs/
+backend/storage/cvs_test/
+
+# IDEs
+.vscode/
+.idea/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle del Practicante — Plataforma de Selección</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body style="visibility:hidden">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="../assets/logo-banco.png" alt="Banco Bogotá" class="navbar-logo" />
+    </div>
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a href="analistas.html" class="active">Panel Analistas</a>
+      <span id="nav-usuario" style="color:rgba(255,255,255,0.7);font-size:0.88rem"></span>
+    </div>
+    <div class="navbar-cta">
+      <button id="btn-logout" class="btn btn-sm" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.3)">Cerrar sesión</button>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top:100px">
+    <div class="page-header">
+      <h1 id="page-title">Detalle del Practicante</h1>
+      <a href="analistas.html" class="btn btn-secondary btn-sm">← Volver al panel</a>
+    </div>
+
+    <div id="alert-msg" class="alert"></div>
+
+    <div id="detalle-content" class="card">
+      <div class="detail-grid">
+        <div class="detail-item">
+          <label>Primer nombre</label>
+          <p id="det-primer-nombre">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Segundo nombre</label>
+          <p id="det-segundo-nombre">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Primer apellido</label>
+          <p id="det-primer-apellido">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Segundo apellido</label>
+          <p id="det-segundo-apellido">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Correo electrónico</label>
+          <p id="det-correo">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Carrera universitaria</label>
+          <p id="det-carrera">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Semestre actual</label>
+          <p id="det-semestre">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Fecha de registro</label>
+          <p id="det-fecha">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Hoja de vida</label>
+          <p id="det-archivo">—</p>
+        </div>
+        <div class="detail-item">
+          <label>Estado actual</label>
+          <p><span id="det-estado" class="badge">—</span></p>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--gray-200);margin:1.5rem 0;" />
+
+      <div class="actions-bar">
+        <strong style="margin-right:0.5rem">Evaluar candidato:</strong>
+        <button id="btn-viable" class="btn btn-success">✓ Viable</button>
+        <button id="btn-no-viable" class="btn btn-danger">✗ No Viable</button>
+        <a id="btn-descargar" href="#" class="btn btn-accent" target="_blank" download>⬇ Descargar Hoja de Vida</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/detalle.js"></script>
+</body>
+</html>
